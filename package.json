@@ -1,0 +1,25 @@
+{
+  "name": "state-reactor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tape tests.js | tap-spec"
+  },
+  "author": "Joe Hand <joe@joeahand.com> (http://joeahand.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "xtend": "^4.0.1"
+  },
+  "devDependencies": {
+    "tap-spec": "^4.1.1"
+  },
+  "description": "A global State holder with functional reactions.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joehand/state-reactor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joehand/state-reactor/issues"
+  },
+  "homepage": "https://github.com/joehand/state-reactor#readme"
+}
