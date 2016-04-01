@@ -40,22 +40,19 @@ function render (state) {
   return yo`
     <div>
       <h1>${header}</h1>
-      <div>
-        <p><a href="#" onclick=${state.onEvent('goSomewhere')}>Go Somewhere</a></p>
-        <p><button onclick=${state.onEvent('replaceSpaces')}>Replace Spaces</button></p>
-        <input
-          style="margin:10px 0;padding:5px;"
-          placeholder="New Header"
-          onkeydown=${function (e) {
-            if (e.keyCode === 13) {
-              // Trigger happens immediately.
-              // Use inside of another event function.
-              state.trigger('changeText', this.value)
-            } }}
-          value=${header}
-          >
-        </input>
-      </div>
+      <p><a href="#" onclick=${state.onEvent('goSomewhere')}>Go Somewhere</a></p>
+      <p><a href="#" onclick=${state.onEvent('replaceSpaces')}>Replace Spaces</a></p>
+      <p>Change Header: <input
+        style="margin:10px 0;padding:5px;"
+        placeholder="New Header"
+        onkeydown=${function (e) {
+          if (e.keyCode === 13) {
+            // Trigger happens immediately.
+            // Use inside of another event function.
+            state.trigger('changeHeader', this.value)
+          } }}
+        value=${header}
+        /></p>
       <footer>${footer}</footer>
     </div>`
 }

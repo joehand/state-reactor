@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "wzrd example.js",
     "test": "standard && tape tests.js | tap-spec"
   },
   "author": "Joe Hand <joe@joeahand.com> (http://joeahand.com/)",
@@ -11,7 +12,8 @@
     "xtend": "^4.0.1"
   },
   "devDependencies": {
-    "tap-spec": "^4.1.1"
+    "tap-spec": "^4.1.1",
+    "yo-yo": "^1.1.1"
   },
   "description": "A global State holder with functional reactions.",
   "repository": {
