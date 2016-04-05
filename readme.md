@@ -142,4 +142,3 @@ function render (state) {
     </div>`
 }
 ```
-test
